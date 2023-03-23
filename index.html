@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 5px;
+          text-align: left;
+        }
+        p {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>Ejercicio 2do Corte</h2>
+       <h4>Bienvenido, en esta aplicación se calculara su sueldo quincenal</h4> 
+    </center>
+    
+        <h3>Introduzca los siguiente datos</h3>
+    
+        <label for="">Cedula: </label>
+        <input type="number" placeholder="" name="cedula" id="cedula"/>
+        <br><br>
+        <label for="">Nombre: </label>
+        <input placeholder="" name="nombre" id="nombre"/>
+        <br><br>
+        <label for="">Apellido: </label>
+        <input placeholder="" name="apellido" id="apellido"/>
+        <br><br>
+        <h3>Horas quincenal trabajadas</h3>
+        <label for="">Cantidad de horas diurnas trabajadas: </label>
+        <input type="number" placeholder="" name="ht_diurnas" id="ht_diurnas"/>
+        <br><br>
+        <label for="">Cantidad de horas vespertinas trabajadas: </label>
+        <input type="number" placeholder="" name="ht_vespertinas" id="ht_vespertinas"/>
+        <br><br>
+        <label for="">Cantidad de horas nocturnas trabajadas: </label>
+        <input type="number" placeholder="" name="ht_nocturnas" id="ht_nocturnas"/>
+        <br><br>
+        <button onclick="ingresar()">Ingresar datos</button>
+
+    
+    <br><br>
+    <h3>Información de pago</h3>
+    <p>Cedula: </p><p id="cedu"></p><br>
+    <p>Nombre: </p><p id="name"></p><br>
+    <p>Apellido: </p><p id="d_name"></p><br>
+    <p>Horas diurnas trabajadas: </p><p id="dia"></p><br>
+    <p>Horas vespertinas trabajadas: </p><p id="tarde"></p><br>
+    <p>Horas nocturnas trabajadas: </p><p id="noche"></p><br>
+    <br>
+    <table>
+        <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Valor</th>
+                </tr>
+        </thead>
+        <tr>
+            <th>Total de horas trabajadas</th>
+            <td><p id="total_h">0</p></td>
+          </tr>
+        <tr>
+          <th>Sueldo quincenal</th>
+          <td><p id="sueldo_neto">0</p></td>
+        </tr>
+        <tr>
+            <th>Descuento de ahorro habitacional</th>
+            <td><p id="ahorro">0</p></td>
+        </tr>
+        <tr>
+            <th>Comisión del seguro social</th>
+            <td><p id="seguro">0</p></td>
+        </tr>
+        <tr>
+            <th>Sueldo quincenal total</th>
+            <td><p id="sueldo_total">0</p></td>
+        </tr>
+      </table>
+      <br><br>
+</body>
+
+<script src="index.js"></script>
+</html>
